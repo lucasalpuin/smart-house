@@ -159,7 +159,131 @@ header{
     margin-top: 150px;
 }
 
+@media screen and (max-width: 700px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(155, 111, 46);
+        padding: 7px;}
+        .nav_bar a{
+            font-size:20px;
+        }
+        .nav_bar{
+            display: flex;
+            flex-direction: column;
+        }
 
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .subtitulo {
+        color: rgb(207, 174, 104);
+        text-shadow: 0 0 5px #16161a;
+        font-size: 27px;
+    }
+    .texto-secundario{
+        width: 300px;
+    }
+    .casa-inteligente{
+        display: flex;
+        flex-direction: column;
+        margin-top:50px;
+    }
+    .casa-inteligente__img1{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
+        border-radius: 20px;
+    }
+    .casa-inteligente__texto h3{
+        text-align: center;
+    }
+    .casa-inteligente__texto{
+        font-size: 12px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 250px;
+    }
+    .casa-inteligente__img2 {
+    height: 250px;
+    width: 400px;
+    margin: auto;
+    box-shadow:10px 15px 20px #16161a;
+    }
+        .subtitulo {
+        color: rgb(207, 174, 104);
+        text-shadow: 0 0 5px #16161a;
+        font-size: 27px;
+    }
+    .texto-secundario{
+        width: 300px;
+    }
+    .casa-inteligente{
+        display: flex;
+        flex-direction: column;
+        margin-top:50px;
+    }
+    .casa-inteligente__img1{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
+        border-radius: 20px;
+    }
+    .casa-inteligente__texto h3{
+        text-align: center;
+    }
+    .casa-inteligente__texto{
+        font-size: 12px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 250px;
+    }
+    .casa-inteligente__img2 {
+    height: 250px;
+    width: 400px;
+    margin: auto;
+    box-shadow:10px 15px 20px #16161a;
+    }
+
+    .cine-casa{
+        display: flex;
+        flex-direction: column;
+        margin-top:100px;
+    }
+
+    .cine-casa__img1{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
+        border-radius: 20px;
+    
+    }
+    .cine-casa__texto{
+        font-size: 12px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 250px;
+    }
+    .cine-casa__texto h3{
+        text-align: center;
+    }
+    .cine-casa__img2{
+        height: 250px;
+        width: 400px;
+        margin: auto;
+        box-shadow:10px 15px 20px #16161a;
+    }
+}
 
 .sistema{
     margin-top: 40px;
@@ -187,7 +311,10 @@ header{
     width: 100px;
 }
 .automatizacion2{
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100vh;
+    grid-column-gap: 0ch;
     margin-bottom: 90px;
 }
 .automatizacion2-subtitulo{
@@ -200,6 +327,7 @@ header{
 }
 .automatizacion2 img{
     height: 90%;
+    width: 674px;
 }
 
 .nosotros-titulo{
