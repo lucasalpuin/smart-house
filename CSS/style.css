@@ -4,11 +4,8 @@
     overflow-x: hidden;
 }
 body{
-    background-image:radial-gradient(rgb(59, 58, 73)
-    ,rgb(25, 25, 26));
-    background-color: #16161a;
-    font-family:'Roboto', sans-serif;
-    
+    background: linear-gradient(to top, #131b2b, #0d1116);   
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -16,30 +13,52 @@ h1{font: size 3.5em ; color: aliceblue;}
 h2{font-size: 2.7em; color: aliceblue;}
 h3{font-size: 2em; color: aliceblue;}
 h4{font-size: 1.25em; color: aliceblue;}
-p{ font-size:1.1em; color: aliceblue;}
+p{ font-size:1.1em; color: rgb(207, 207, 207);}
+
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(155, 111, 46);
-    padding: 7px;
 
-}
-.logo{
-    display: flex;
-}
-.logo h1{
-    text-shadow: 0px 3px 10px black;
-}
-.nav_bar a{
-    text-decoration: none;
-    font-size:1.1em;    
-    color: rgb(255, 255, 255);
-    padding: 0px 12px;
-    text-shadow: 0px 3px 10px black;
-}
+    width:100vw;
+    height: 92vh;
+    background: linear-gradient(
+        to right,
+        rgba(230, 207, 4, 0.541),
+        rgba(0, 174, 255, 0.6),
+        rgba(51,51,153,0.6)
 
+    ),
+    url(../img/pexels-ahmed-abdelaziz-453201.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    clip-path: polygon(52% 100%, 100% 78%, 100% 0, 0 0, 0 77%);
+    position: relative;
+}
+header .text-container{    
+    
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    
+}
+.text-container h1{
+    text-shadow: 0px 01px 7px rgba(0, 0, 0, 0.856);
+    padding: 40px;
+    font-size: 50px;
+}
+.navbar-nav li a{
+    color: aliceblue;
+    font-weight:bolder
+}
+.navbar-nav li{
+    padding: 0 14px
+}
 
 .home_fondo{
     display: flex;
@@ -60,8 +79,9 @@ header{
     ,url(https://i.imgur.com/iNdgs5L.jpg); 
 }
 .subtitulo {
-    color: rgb(207, 174, 104);
-    text-shadow: 0 0 5px #16161a;
+    color: rgb(214, 162, 47);
+    font-weight: bold;
+    text-shadow: 3px 2px 1px #000000;
 }
 .control-iluminacion{
     background-image: linear-gradient(
@@ -91,160 +111,109 @@ header{
     ,url(https://i.imgur.com/e74IwBM.jpg);
 }
 
-.instalaciones-populares{
-    text-align: center;
-    margin: 40px;
-}
-.casa-inteligente{
-    display: flex;
-    margin-top:50px;
-}
+
 .casa-inteligente__img1{
     height: 100px;
     width: 100px;
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 10px;
-    box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
+    box-shadow: 0 6px 36px rgb(90, 193, 218);
     border-radius: 20px;
 }
 
 
 .casa-inteligente__texto{
-    font-size: 12px;
-    margin: 30px;
-    width: 250px;
-    margin-left: 150px;
+    font-size: 14px;
+    max-width: 300px;
 }
 .casa-inteligente__texto h3{
+    padding: 10px;
     margin-bottom: 20px;
     color: rgb(207, 174, 104);
+}
+
+
+.casa-inteligente__img2 {
+    max-width: 400px;
+    width: 400px;
+    height: 250px;
+    margin:auto
+
 
 }
-.casa-inteligente__img2 {
-    height: 250px;
-    width: 400px;
-    margin-left: 250px;
-    box-shadow:10px 15px 20px #16161a;
-}
+
 
 .cine-casa{
-    display: flex;
     flex-direction: row-reverse;
     margin-top:100px;
 }
+
 .cine-casa__img1{
     height: 100px;
-    margin-top: 40px;
-    margin-right: 100px;
-    box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
+    box-shadow: 0 6px 36px rgb(90, 193, 218);
     border-radius: 20px;
-
 }
+
 .cine-casa__texto{
-    font-size: 12px;
-    margin: 30px;
-    width: 250px;
-    margin-right: 150px;
+    font-size: 14px;
+    max-width: 300px;
 }
 .cine-casa__texto h3{
+    padding: 10px;
     margin-bottom: 20px;
     color: rgb(207, 174, 104);
-    text-shadow: 0 0 5px #16161a;
 }
+
 .cine-casa__img2{
-    height: 250px;
-    width: 400px;
-    margin-right: 250px;
-    box-shadow:10px 15px 20px #16161a;
-}
-.footer-home{
-    margin-top: 150px;
-}
+    max-width: 400px;
+    margin:auto
+} 
 
-.sistema{
-    margin-top: 40px;
-    text-align: center;
-    
-}
-.automatizacion-subtitulo{
-    text-align: center;
-    font-size: 25px;
-    margin: 30px;
-    margin-bottom: 70px;
-    color: rgb(207, 174, 104);
-    text-shadow: 0 0 5px #16161a;
-}
-.automatizacion{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    justify-items: center;
-    margin-bottom: 90px;
-}
-
-.automatizacion div img{
-    height: 100px;
-}
-.automatizacion p{
+.automatizacion-tareas p img{
     width: 100px;
+    padding-top:9px;
+    transition: 0.3s;
 }
-.automatizacion2{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    justify-items: center;
-    margin-bottom: 90px;
-
-}
-.automatizacion2-subtitulo{
-    text-align: center;
-    font-size: 25px;
-    margin: 30px;
-    margin-bottom: 43px;
-    color: rgb(207, 174, 104);
-    text-shadow: 0 0 5px #16161a;
-}
-.automatizacion2 img{
-    height: 90%;
-    width: 330px;
-
+.automatizacion-tareas p img:hover{
+    transform: translateY(-7px);
 }
 
 
-.nosotros-titulo{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 90px;
+
+.automatizacion-tareas__texto{
+    width: 300px;
+    margin: auto;
 }
-.nosotros1{
-    display: flex;
-    margin-bottom: 70px;
+
+
+.carousel-inner{
+    height:760px;
+    width: 360px;
+    margin: auto;
 }
-.nosotros1 img{
-    height: 340px;
-    margin: 0px 80px;
-}
-.nosotros1 p{
-    width: 450px;
-    margin-left: 50px;
+
+.nosotros{
     margin-top: 100px;
-    color: rgb(241, 192, 86);
+}
+.nosotros div img{
+    max-width: 400px;
+}
+.nosotros div p{
+    width: 500px;
+    margin: 0 50px;
+    margin-top: 30px;
 }
 
 
-.nosotros2{
-    display: flex;
-    margin-bottom: 100px;
-}
+
 .nosotros-subtitulo{
     text-align: center;
     color: rgb(241, 192, 86); 
-    margin-bottom: 27px; 
+    margin-bottom: 40px;
 }
 .nosotros2__texto{
-    width: 300px;
-    margin: 0px 200px;
+    width: 500px;
+    margin: 50px;
 }
 
 .contacto-titulo{
@@ -252,27 +221,25 @@ header{
     margin: 20px;
 }
 .contacto{
-    display: flex;
     margin-top: 30px;
     margin-bottom: 120px;
 }
 .contacto__texto{
-    width: 400px;
-    margin: 130px 200px;
-    color: rgb(241, 192, 86);
+    width: 500px;
+    margin: auto;
+
 }
 .form{
-    display: flex;
+    background: linear-gradient(to top, #2c3e50, #4ca1af);   
     justify-content: center;
-    margin: 90px 0;
+    width: 350px;
+    height: 550px;
+    margin: auto ;
     border: 3px solid black;
     padding: 30px;
-    box-shadow: 3px 4px rgba(0, 0, 0, 0.64);
+
 }
-.form p{
-    text-align: center;
-    margin-top: 15px;
-}
+
 
 .producto-titulo{
     text-align: center;
@@ -296,7 +263,7 @@ header{
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    background-color: rgb(50, 47, 42);
+    background-color: rgba(143, 126, 29, 0.836);
     transition: all 0.2s;
 }
 
@@ -316,122 +283,64 @@ header{
     box-shadow: 5px 12px 16px rgba(0, 0, 0, 0.544);
 }
 
-@media screen and (max-width: 700px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(155, 111, 46);
-        padding: 7px;}
-        .nav_bar a{
-            font-size:20px;
-        }
-        .nav_bar{
-            display: flex;
-            flex-direction: column;
-        }
-        
-
-}
-@media screen and (max-width: 1000px){
-    .automatizacion{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        justify-items: center;
-        margin-bottom: 90px;
-    }
-    .automatizacion2{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-column-gap: 0ch;
-        margin-bottom: 90px;}
-        .automatizacion2 img{
-            height: 90%;
-            width: 400px;}
+.footer {
+    position: relative;
+    width: 100%;
+    background: #202c3f;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
 }
 
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
 
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
 
-@media screen and (max-width: 1024px){
+.social-icon__link {
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0px 10px;
+    margin-top: 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icon__link:hover {
+    transform: translateY(-10px);
+    color: rgb(182, 137, 22);
+}
 
-    .subtitulo {
-        color: rgb(207, 174, 104);
-        text-shadow: 0 0 5px #16161a;
-        font-size: 27px;
-    }
-    .texto-secundario{
-        width: 300px;
-    }
-
-        .subtitulo {
-        color: rgb(207, 174, 104);
-        text-shadow: 0 0 5px #16161a;
-        font-size: 27px;
-    }
-    .texto-secundario{
-        width: 300px;
-    }
-    .casa-inteligente{
-        display: flex;
-        flex-direction: column;
-        margin-top:50px;
-    }
-    .casa-inteligente__img1{
-        height: 100px;
-        width: 100px;
-        margin: auto;
-        box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
-        border-radius: 20px;
-    }
-    .casa-inteligente__texto h3{
-        text-align: center;
-    }
-    .casa-inteligente__texto{
-        font-size: 12px;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        width: 250px;
-    }
-    .casa-inteligente__img2 {
-    height: 250px;
-    width: 400px;
-    margin: auto;
-    box-shadow:10px 15px 20px #16161a;
-    }
-
-    .cine-casa{
-        display: flex;
-        flex-direction: column;
-        margin-top:100px;
-    }
-
-    .cine-casa__img1{
-        height: 100px;
-        width: 100px;
-        margin: auto;
-        box-shadow: 0 5PX 30px rgba(255, 179, 79, 0.671);
-        border-radius: 20px;
-    
-    }
-    .cine-casa__texto{
-        font-size: 12px;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        width: 250px;
-    }
-    .cine-casa__texto h3{
-        text-align: center;
-    }
-    .cine-casa__img2{
-        height: 250px;
-        width: 400px;
-        margin: auto;
-        box-shadow:10px 15px 20px #16161a;
-    }
-
+.menu__link {
+    font-size: 1.2rem;
+    color: rgb(195, 189, 189);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+.menu__link:hover{
+    color: rgb(182, 137, 22);
+}
+ 
+.footer p {
+    color: #fff;
+    margin: 5px 0 7px 0;
+    font-size: .8rem;
+    font-weight: 300;
 }
